@@ -2,7 +2,7 @@
 	"name": "freecodecamp-recipe-box",
 	"version": "1.0.0",
 	"description": "Create a recipe box app using ReactJS",
-	"homepage": "https://codesandbox.io/s/new",
+	"homepage": "https://clumsy-coder.github.io/freeCodeCamp-recipeBox/",
 	"keywords": ["react", "react-bootstrap", "freecodecamp"],
 	"main": "src/index.js",
 	"dependencies": {
