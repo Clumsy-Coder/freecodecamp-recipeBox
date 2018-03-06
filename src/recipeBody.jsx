@@ -11,7 +11,7 @@ export default class RecipeBody extends React.Component {
 
 		let localRecipes =
 			JSON.parse(
-				localStorage.getItem("com.clumsy-coder.freecodecamp.recipes"),
+				localStorage.getItem("com.clumsy-coder.freeCodeCamp.recipes"),
 			) || [];
 
 		this.state = {
@@ -25,7 +25,7 @@ export default class RecipeBody extends React.Component {
 
 	componentDidUpdate() {
 		localStorage.setItem(
-			"com.clumsy-coder.freecodecamp.recipes",
+			"com.clumsy-coder.freeCodeCamp.recipes",
 			JSON.stringify(this.state.recipes),
 		);
 	}

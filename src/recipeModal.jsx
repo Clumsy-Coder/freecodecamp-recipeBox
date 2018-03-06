@@ -25,7 +25,7 @@ export default class RecipeModal extends React.Component {
 	}
 
 	closeModal() {
-		this.setState({ show: false });
+		this.setState({ show: false, isValid: false });
 	}
 
 	onSaveClick() {
@@ -38,7 +38,9 @@ export default class RecipeModal extends React.Component {
 	}
 
 	checkData() {
-		this.setState({ isValid: this.recipeName.value && this.ingredients.value });
+		this.setState({
+			isValid: !!(this.recipeName.value && this.ingredients.value),
+		});
 	}
 
 	render() {
